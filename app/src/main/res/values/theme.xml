@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomActionBarTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionBarDivider">@null</item>
+        <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
+        <!-- actionBarTabBarStyle 注释掉使用的是系统默认的 actionBarTabBarStyle-->
+        <!--<item name="android:actionBarTabStyle">@style/MyActionBarTabs</item>-->
+        <item name="android:actionBarTabBarStyle">@style/MyActionBarTabBars</item>
+        <item name="android:actionMenuTextColor">@android:color/holo_green_light</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarDivider">@null</item>
+        <item name="actionBarTabTextStyle">@style/MyActionBarTabText</item>
+        <!-- actionBarTabBarStyle 注释掉使用的是系统默认的 actionBarTabBarStyle-->
+        <!--<item name="actionBarTabStyle">@style/MyActionBarTabs</item>-->
+        <item name="actionBarTabBarStyle">@style/MyActionBarTabBars</item>
+        <item name="actionMenuTextColor">@android:color/holo_green_light</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="android:backgroundStacked">@color/colorPrimary</item>
+
+        <!-- Support library compatibility -->
+        <item name="background">@color/colorPrimary</item>
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="backgroundStacked">@color/colorPrimary</item>
+    </style>
+
+    <!-- ActionBar title text -->
+    <style name="MyActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <!-- ActionBar tabs text -->
+    <style name="MyActionBarTabText" parent="@style/Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textColor">@android:color/holo_blue_bright</item>
+    </style>
+
+    <!-- ActionBar tabs 下边框 -->
+    <style name="MyActionBarTabs" parent="@style/Widget.AppCompat.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_example</item>
+    </style>
+
+    <!-- ActionBar TabBar -->
+    <style name="MyActionBarTabBars" parent="@style/Widget.AppCompat.ActionBar.TabBar">
+        <!-- ActionBar TabBar 中间竖线 -->
+        <item name="android:showDividers">none</item>
+        <!-- ActionBar TabBar 背景色 -->
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:dividerPadding">40dp</item>
+    </style>
+</resources>
